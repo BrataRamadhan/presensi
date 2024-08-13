@@ -1,3 +1,4 @@
+@extends('layouts.main')
 @section('contents')
     <div class="container">
         <h2>Selamat Datang Pegawai</h2>
@@ -6,4 +7,5 @@
             <button class="btn btn-primary" type="submit">Logout</button>
         </form>
     </div>
+    
 @endsection
