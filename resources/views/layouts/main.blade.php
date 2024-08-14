@@ -28,6 +28,7 @@
   <div id="loader">
         <div class="spinner-border text-primary" role="status"></div>
     </div>
+    @yield('header');
     @include('layouts.bottomNav')
     @yield('contents')
 
