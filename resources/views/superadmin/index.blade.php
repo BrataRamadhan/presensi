@@ -1,3 +1,5 @@
+
+
 @extends('layouts.main')
 
 @section('contents')
@@ -7,15 +9,20 @@
                     <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w64 rounded">
                 </div>
                 <div id="user-info">
-                    <h2 id="user-name">Adam Abdi Al A'la</h2>
+
+                @auth
+                    <h1 id="name">
+                       {{Auth::user()->name}}
+                    </h1>
+                @endauth
                     <span id="user-role">Head of IT</span>
-                </div>
-            </div>
-        </div>
-        <form action="/logout" method="post">
+                    <form action="/logout" method="post">
             @csrf
             <button type="submit" class="btn btn-primary">Logout</button>
         </form>
+                </div>
+            </div>
+        </div>
         <div class="section" id="menu-section">
             <div class="card">
                 <div class="card-body text-center">
