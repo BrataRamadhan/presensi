@@ -20,7 +20,7 @@ Route::group(['middleware' => 'guest'], function() {
 Route::group(['middleware' => ['auth', 'checkrole:1,2']], function() {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/redirect', [RedirectController::class, 'cek']);
-    Route::get('/presensi.create',[PresensiController::class,'create'])->name('create');
+    Route::get('/presensi/create',[PresensiController::class,'create'])->name('create');
 
     
 });

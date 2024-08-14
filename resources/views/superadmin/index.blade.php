@@ -1,13 +1,6 @@
 @extends('layouts.main')
 
 @section('contents')
-
-<div>
-
-        <a class="{{Route('create')}}" href ="" >
-                       tes
-        </a> 
-        </div>
     <div class="section" id="user-section">
             <div id="user-detail">
                 <div class="avatar">
